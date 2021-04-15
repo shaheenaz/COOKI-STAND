@@ -150,6 +150,15 @@ function handleSubmit(event) {
     
     
 }
+ 
+// function deleteRow(t)
+// {
+//     var row = t.parentNode.parentNode;}
+//     document.getElementById("cookie").deleteRow(lastrrrow.rowIndex);
+//     console.log(lastrrrow);
+    // document.getElementById("cookie").deleteRow(0)
+// var firstRow = table.rows[0];
+// firstRow.parentNode.insertBefore(newci,firstRow);
 
 // $( "<p>Test</p>" ).insertBefore( ".inner
 // function deleterow(cookie) {
