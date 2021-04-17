@@ -6,6 +6,7 @@ let array = []
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', 'dailey location Total']
 let container = document.getElementById('cookie')
 let table = document.createElement('table')
+table.setAttribute("id","mytable")
 container.appendChild(table)
 
 function Cookies(cityName, max, min, avarage) {
@@ -50,6 +51,9 @@ city4.calcCookies()
 city5.calcCookies()
 console.log(array)
 
+// function myFunction() {
+//     document.getElementById("mytable").deleteRow(0);
+//   }
 
 function headerraw() {
     let tr = document.createElement('tr')
@@ -101,6 +105,7 @@ city5.render()
 
 function lastrow () {
     let lastrrrow = document.createElement('tr')
+    lastrrrow.setAttribute("id",'last')
     table.appendChild(lastrrrow)
     let firstTotal = document.createElement('td')
     lastrrrow.appendChild(firstTotal)
@@ -130,7 +135,7 @@ lastrrrow.appendChild(td)
 td.textContent = totalOF
 }
 
-lastrow()
+// lastrow()
 
 const form = document.getElementById('salmonform')
 form.addEventListener('submit', handleSubmit)
@@ -145,13 +150,78 @@ function handleSubmit(event) {
     let theavarge = event.target.avarge.value
     console.log(theavarge)
     let newcity = new Cookies(theCity, maxnum, minnum, theavarge)
+    if(newcity!=0){ 
+        document.getElementById("mytable").deleteRow(table.rows.length -1)}
     newcity.calcCookies()
     newcity.render()
+    lastrow()
+    // for(let i=0; i<table.rows.length ; i++)
+    // if(newcity!=0){ 
+    //     for(let i=0; i<table.rows.length ; i++){
+    //     document.getElementById("mytable").deleteRow(table.lastrrrow)}
+    //     lastrow()
     
+    //  newcity.calcCookies()
+    //  newcity.render()
+    //   lastrow()
+    // if(newcity!=0){ 
+    //     for(let i=0; i<table.rows.length ; i++){
+    //     document.getElementById("mytable").deleteRow(table.lastChild)}
+         
+         }
+        //  console.log(table.rows.length)
+        //  lastrow()
+        //  if(Cookies.newcity!=0){ 
+             
+        //         document.getElementById("mytable").deleteRow(table.rows.length -1)
+                
+                
+               
+                //     var table = document.getElementById(mytable
+                //     var rowCount =Cookies.table.rows.length ;
+                
+                //     table.deleteRow(rowCount -1);
+                //     console.log(rows)
+                // }deleterow()
+            
+            // document.getElementById("mytable").deleteRow(rowCount -1)
+        // }deleterow(lastrow.lastrrrow)
+        // lastrow()
     
-}
+    lastrow()
+    
+        // table.deleteRow(lastrow.lastrrrow)
+// deleterow()    // }  newcity.calcCookies()
+    // newcity.render()
  
-// function deleteRow(t)
+    
+
+
+// function myFunction() {
+//    if(){
+//     document.getElementById("mytable").deleteRow(5);
+//   }}
+//   myFunction()
+//   lastrow()
+// function deleterow(cookie) {
+//     var table = document.getElementById(cookie);
+//     var rowCount = table.array.length;
+
+//     table.deleterow(rowCount -1);
+
+// }
+// function myFunction() {
+//     document.getElementById("table").deleteRow(0);
+//   }
+//   city1.myFunction()
+
+// var rws;
+// 	function RemoveRow(obj){
+// 		obj=document.getElementById(obj);
+// 		rws=obj.getElementsByTagName('tr');
+// 		obj.removeChild(rws[rws.length-1]);
+// 	}
+// RemoveRow()// function deleteRow(t)
 // {
 //     var row = t.parentNode.parentNode;}
 //     document.getElementById("cookie").deleteRow(lastrrrow.rowIndex);
