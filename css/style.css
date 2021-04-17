@@ -3,50 +3,122 @@
 }
 header h1{
     font-family: 'Zen Dots', cursive;
-    background-color: rgb(121, 113, 97);
+    background-color: rgb(243, 239, 10);
     color: rgb(14, 14, 56);
-    width: 20%;
+   margin-left: 30%;
+   margin-right: 30%;
+    text-align: center;
 }
-header h1{
+/* header h1{
     font-family: 'Lobster', cursive
-}
+} */
 header a {
     text-decoration:none;
     float: right;
-    background-color: mediumspringgreen;
+    background-color: rgb(226, 223, 5);
     
 }
 body{
-    background-color: bisque;
+    /* background-color: bisque; */
     /* font-family: 'Zen Dots', cursive; */
-    background-image: url(https://thumbs.dreamstime.com/z/small-fish-simple-seamless-pattern-blue-white-vector-background-small-fish-simple-seamless-pattern-blue-white-vector-104972599.jpg);
+    background-image: url(https://wallpaperaccess.com/full/1422325.jpg);
+}
+h2{
+    background-color: rgb(243, 241, 107);
+    width: 25%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 p{
-    color: rgb(75, 16, 16);
+    color: rgb(136, 116, 116);
+    background-color: cadetblue;
 }
 img{
     width: 160px;
     height: 160px;
     display: inline-block;
     padding-left: 1%;
-}
-footer{
-    background-attachment:fixed;
-    color: crimson;
+    background-color: blanchedalmond;
+    margin-left: 1%;
+    margin-left: 1%;
+
 }
 ul li {
-    background-color: navajowhite;
+    background-color: rgb(250, 247, 65);
     font-size: large;
-    color: navy;
+    color: rgb(1, 1, 8);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+    /* width: 20%; */
+    list-style-type:none;
+    margin-left: 30%;
+    margin-right: 30%;
+
+    
 }
 h3{
-    text-align: center;background-color: rgb(228, 85, 19);font-family: fantasy;
+    text-align: center;background-color: rgb(255, 242, 59);font-family: fantasy;
+    margin-left: 35%;
+    margin-right: 35%;
+    position: fixed;
 }
 h4{
     font-size: xx-large;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    background-color: rgb(240, 243, 55);
+    margin-left: 40%;
+    margin-right: 40%;
 }
 footer{
     text-align: center;
-    background-color: palegoldenrod;
+    background-color: rgb(247, 231, 60);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder; 
+    color: rgb(34, 18, 18);
+}
+form{
+    width: 50%;
+}
+fieldset legend{
+    font-size: larger;
+    font-family:fantasy ;
+    background-color: rgb(250, 253, 63);
+
+}
+fieldset label{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(240, 204, 181);
+}
+fieldset :last-child {
+   
+        background-color: #e2f10e; /* Green */
+        border: none;
+        color: rgb(6, 7, 19);
+        padding: 12px 27px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+      
+
+}
+table th{
+    /* background-color: rgb(255, 236, 65);
+    font-family: sans-serif;
+    border: 1px solid black;
+    border-collapse: collapse; */
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #492b2b;
+    color: white;
+}
+table td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color: rgb(253, 253, 67);
 }
